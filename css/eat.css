@@ -1,0 +1,699 @@
+
+
+/* -------------------------------------------------------- mobile screen---------------------------------------------------------*/
+
+/* reset margin and padding */
+*{
+
+	margin: 0; 
+	padding: 0;
+}
+
+ h1 {
+
+  font-size: 35px;
+  text-align: center;
+  padding: 15px;
+}
+
+
+/*overall container */
+div.wrapper {
+
+	width: 100%;
+
+}
+
+div.topbar img{
+
+	width: 25px;
+	float: right;
+	padding: 5px;
+
+}
+
+
+
+#awlogo {
+
+	width: 100%;
+
+}
+
+/*navbar*/
+
+.gennavb {
+  background-color: #5C607C;
+  overflow: hidden;
+
+}
+
+.gennavb a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.gennavb a:hover {
+  background-color: #191572;
+  color: #ffffff;
+}
+
+.active {
+  background-color: #191572;
+  color: white;
+}
+
+/* flags list */
+
+.col-container {
+    display: table; 
+    width: 100%; 
+
+
+}
+
+div .col01 {
+    display: block;
+    width: 50%;
+    margin-left: 22%;
+}
+
+div .col02 {
+
+  display: block;
+  width: 50%;
+  margin-left: 22%;
+}
+
+div .col03 {
+
+  display: block;
+  width: 50%;
+  margin-left: 22%;
+}
+
+div .col04 {
+
+  display: block;
+  width: 50%;
+  margin-left: 22%;
+}
+
+div .col05 {
+
+  display: block;
+  width: 50%;
+  margin-left: 22%;
+}
+
+div .col01 img, div.col02 img {
+
+  width: 100%;
+  margin-left: 5%;
+  border: 1px solid #000000;
+
+}
+
+div .col03 img, div.col04 img {
+
+  width: 100%;
+  margin-left: 5%;
+  border: 1px solid #000000;
+
+}
+
+div.col05 img {
+width: 100%;
+  margin-left: 5%;
+  border: 1px solid #000000;
+
+}
+
+
+
+
+
+div.col01, div.col02, div.col03, div.col04, div.col05 h3 {
+
+  text-align: center;
+}
+
+/* general button */
+
+#genbut {
+
+  background-color: blue;
+  opacity: 0.5;
+  color: white;
+  padding: 5px;
+  border-radius: 15px;
+  margin-left: 40%;
+  margin-top: 15px;
+}
+
+#genbut:hover {
+
+  background-color: #000000;
+  
+
+}
+
+/*highlight */
+
+.highlight01 h3 {
+
+  text-align: center;
+  background-color: #5C607C;
+  padding: 10px;
+  color: #ffffff;
+
+}
+
+.highlight01 h4 {
+
+  text-align: center;
+  opacity: 0.5;
+  padding: 10px;
+  color: #000000;
+  text-decoration: underline;
+
+}
+
+#desc p {
+
+  text-align: center;
+  padding: 35px;
+}
+
+.highlight01 img {
+
+  width: 75%;
+  padding: 5%;
+  margin-left: 8%;
+}
+
+/* highlight part02 */
+
+
+.highlight02 h3 {
+
+  text-align: center;
+  background-color: #5C607C;
+  padding: 10px;
+  color: #ffffff;
+
+}
+
+.highlight02 h4 {
+
+  text-align: center;
+  opacity: 0.5;
+  padding: 10px;
+  color: #000000;
+  text-decoration: underline;
+
+}
+
+#desc p {
+
+  text-align: justify;
+  padding: 35px;
+}
+
+.highlight02 img {
+
+  width: 75%;
+  padding: 5%;
+  margin-left: 8%;
+}
+
+/* highlight part03 */
+
+.highlight03 h3 {
+
+  text-align: center;
+  background-color: #5C607C;
+  padding: 10px;
+  color: #ffffff;
+
+}
+
+.highlight03 h4 {
+
+  text-align: center;
+  opacity: 0.5;
+  padding: 10px;
+  color: #000000;
+  text-decoration: underline;
+
+}
+
+#desc p {
+
+  text-align: justify;
+  padding: 35px;
+}
+
+.highlight03 img {
+
+  width: 75%;
+  padding: 5%;
+  margin-left: 8%;
+}
+
+/* footer */
+.footer {
+
+  background-color: #5C607C;
+  text-align: center;
+  padding: 20px;
+  color: #ffffff;
+  height: 70%;
+  clear: both;
+}
+
+#footerform h3 {
+
+  color: #ffffff;
+  padding-bottom: 10px;
+
+}
+
+/*form */
+#footerform {
+
+  width: 100%;
+  float: left;
+}
+
+div.footer img {
+
+  width: 75%;
+  padding-bottom: 50px;
+}
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #56556F;
+  opacity: 0.5; /* Firefox */
+  text-align: center;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #56556F;
+  text-align: center;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #56556F;
+  text-align: center;
+}
+
+/*footer form */
+
+  .box01 , .box02{
+
+  width: 50%;
+  height: 35px;
+  margin-top: 10px;
+}
+
+  div .footer img {
+
+    width: 75%;
+    padding-bottom: 50px;
+  }
+
+ input[type=submit] {
+
+  background-color: #A8A8AB;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+ input[type=submit]:hover {
+
+  background-color: #0C80C3;
+
+}
+
+
+#footerform button {
+
+  width: 75px;
+  height: 35px;
+  border-radius: 25px;
+
+  color: black;
+  opacity: 0.8;
+}
+
+
+
+
+
+@media only screen and (max-width: 700px) {
+
+.gennavb a:not(:first-child) {display: none;}
+  .gennavb a.icon {
+    float: right;
+    display: block;
+  }
+
+  .gennavb.responsive {position: relative;}
+  .gennavb.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .gennavb.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+
+}
+
+/* -------------------------------------------------------- tablet screen size ---------------------------------------------------------*/
+
+
+@media only screen and (min-width: 700px) {
+
+
+
+
+#awlogo {
+
+  width: 40%;
+  padding: 25px;
+
+}
+
+/* topbar --> support, login, blind people support */
+div.topbar img{
+
+  width: 45px;
+  float: right;
+  padding: 15px;
+
+
+}
+
+
+div.wrapper {
+
+  width: 75%;
+  margin-left: 12%;
+}
+
+
+
+/*navbar*/
+
+.gennavb {
+  background-color: #5C607C;
+  overflow: hidden;
+
+
+}
+
+.gennavb a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 10px;
+  text-decoration: none;
+  font-size: 15px;
+  width: 12%;
+}
+
+.gennavb a:hover {
+  background-color: #191572;
+  color: #ffffff;
+}
+
+.active {
+  background-color: #191572;
+  color: white;
+}
+
+
+.gennavb .icon {
+
+  display: none;
+}
+
+/* footer */
+
+div.footer img {
+
+  width: 35%;
+  padding-bottom: 50px;
+}
+
+div.footer h3 {
+
+  font-size: 35px;
+}
+
+/* flag list */
+
+.col-container {
+    display: table; 
+    width: 100%; 
+
+
+}
+
+div .col01 {
+    display: table-cell;
+    width: 12%;
+    padding: 1%;
+
+
+}
+
+div .col02 {
+
+display: table-cell;
+width: 12%;
+padding: 1%;
+}
+
+div .col03 {
+
+display: table-cell;
+width: 12%;
+padding: 1%;
+
+}
+
+div .col04 {
+
+display: table-cell;
+width: 12%;
+padding: 1%;
+}
+
+div .col05 {
+
+display: table-cell;
+width: 12%;
+padding: 1%;
+
+}
+
+div .col01 img, div.col02 img {
+
+  width: 100%;
+  margin-left: 0px;
+
+  height: 75px;
+
+}
+
+div .col03 img, div.col04 img {
+
+  width: 100%;
+  margin-left: 0px;
+
+  height: 75px;
+}
+
+div.col05 img {
+  width: 100%;
+  margin-left: 0px;
+
+  height: 75px;
+
+}
+
+
+
+
+
+div.col01 h3, div.col02 h3 , div.col03 h3, div.col04 h3, div.col05 h3 {
+
+  text-align: center;
+  padding: 15px;
+}
+
+
+  /*highlight*/
+
+
+  .highlight01 img {
+
+  width: 28%;
+  padding: 5px;
+  margin-left: 2%;
+   height: 150px;
+
+}
+
+.highlight02 img {
+
+  width: 28%;
+  padding: 5px;
+   margin-left: 2%;
+   height: 150px;
+}
+
+.highlight03 img {
+
+  width: 28%;
+  padding: 5px;
+   margin-left: 2%;
+  height: 150px;
+
+}
+
+.highlight01 h3, .highlight02 h3, .highlight03 h3 {
+
+  margin-top: 25px;
+}
+
+/* general button */
+
+#genbut {
+
+  margin-left: 45%;
+}
+
+}
+
+
+/* -------------------------------------------------------- laptop screen size ---------------------------------------------------------*/
+
+@media only screen and (min-width: 900px) {
+
+
+
+
+
+  /*logo*/
+
+
+#awlogo {
+
+  width: 25%;
+  padding: 25px;
+
+}
+
+/*flags*/
+
+div.wrapper {
+
+  width: 75%;
+  margin-left: 12.5%;
+}
+
+.flags {
+
+  width: 85%;
+  margin-left: 8%;
+}
+
+
+div .col01 {
+    display: table-cell;
+    width: 12%;
+    padding: 1%;
+
+
+}
+
+div .col02 {
+
+display: table-cell;
+width: 12%;
+padding: 1%;
+}
+
+div .col03 {
+
+display: table-cell;
+width: 12%;
+padding: 1%;
+
+}
+
+div .col04 {
+
+display: table-cell;
+width: 12%;
+padding: 1%;
+}
+
+div .col05 {
+
+display: table-cell;
+width: 12%;
+padding: 1%;
+
+
+}
+
+div .col01 img, div.col02 img {
+
+  width: 75%;
+  margin-left: 0px;
+
+  height: 100px;
+
+}
+
+div .col03 img, div.col04 img {
+
+  width: 75%;
+  margin-left: 0px;
+
+  height: 100px;
+}
+
+div.col05 img {
+  width: 75%;
+  margin-left: 0px;
+
+  height: 100px;
+
+}
+
+div.footer img {
+
+  width: 25%;
+  padding-bottom: 50px;
+}
+
+
+
+}

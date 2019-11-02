@@ -1,0 +1,468 @@
+/* -------------------------------------------------------- mobile screen---------------------------------------------------------*/
+/* reset margin and padding */
+*{
+  font-family: Aleo;
+	margin: 0; 
+	padding: 0;
+}
+
+h2 {
+
+  text-align: center;
+  padding: 30px;
+  font-size: 25px;
+
+}
+
+#register-form  {
+
+  margin-left: 20%;
+  padding: 10px;
+  margin-bottom: 30%;
+}
+
+
+/*overall container */
+div.wrapper {
+
+	width: 100%;
+
+}
+
+div.topbar img{
+
+	width: 25px;
+	float: right;
+	padding: 5px;
+
+}
+
+
+
+#awlogo {
+
+	width: 100%;
+
+}
+
+/*navbar*/
+
+.gennavb {
+  background-color: #5C607C;
+  overflow: hidden;
+
+}
+
+.gennavb a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.gennavb a:hover {
+  background-color: #191572;
+  color: #ffffff;
+}
+
+.active {
+  background-color: #191572;
+  color: white;
+}
+
+/* footer */
+.footer {
+
+  background-color: #5C607C;
+  text-align: center;
+  padding: 20px;
+  color: #ffffff;
+  height: 70%;
+  clear: both;
+}
+
+#footerform h3 {
+
+  color: #ffffff;
+  padding-bottom: 10px;
+
+}
+
+/*form */
+#footerform {
+
+  width: 100%;
+  float: left;
+}
+
+div.footer img {
+
+  width: 75%;
+  padding-bottom: 50px;
+}
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #56556F;
+  opacity: 0.5; /* Firefox */
+  text-align: center;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #56556F;
+  text-align: center;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #56556F;
+  text-align: center;
+}
+
+/*footer form */
+
+ 
+
+  div .footer img {
+
+    width: 75%;
+    padding-bottom: 50px;
+  }
+
+
+
+  /* main form */
+
+   #btn-submit {
+
+  background-color: #A8A8AB;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 8%;
+  width: 30%;
+  position:absolute;
+}
+
+ #btn-submit:hover {
+
+  background-color: #0C80C3;
+
+}
+
+
+
+   #btn-cancel {
+
+  background-color: #A8A8AB;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 8%;
+  position: absolute;
+  width: 30%;
+}
+
+ #btn-cancel:hover {
+
+  background-color: #0C80C3;
+
+}
+
+   #register {
+
+  background-color: #A8A8AB;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 8%;
+  width: 30%;
+  position: absolute;
+}
+
+ #register:hover {
+
+  background-color: #0C80C3;
+
+}
+
+ .input_field{
+
+  width: 50%;
+  height: 35px;
+  margin-top: 10px;
+  padding: 15px;
+
+
+}
+
+#email {
+
+  padding: 10px;
+  width: 100%;
+}
+
+#password {
+
+  padding: 10px;
+  width: 100%;
+}
+
+#first_name {
+
+  padding: 10px;
+  width: 100%;
+}
+
+#last_name {
+
+  padding: 10px;
+  width: 100%;
+}
+
+#username {
+
+  padding: 10px;
+  width: 100%;
+}
+
+#confirm_password {
+
+  padding: 10px;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 700px) {
+
+.gennavb a:not(:first-child) {display: none;}
+  .gennavb a.icon {
+    float: right;
+    display: block;
+  }
+
+  .gennavb.responsive {position: relative;}
+  .gennavb.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .gennavb.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+
+}
+
+
+
+/* -------------------------------------------------------- tablet screen---------------------------------------------------------*/
+
+@media only screen and (min-width: 700px) {
+
+
+
+#awlogo {
+
+  width: 40%;
+  padding: 25px;
+
+}
+
+/* topbar --> support, login, blind people support */
+div.topbar img{
+
+  width: 45px;
+  float: right;
+  padding: 15px;
+
+
+}
+
+#login  {
+
+  margin-left: 30%;
+  padding: 10px;
+}
+
+/* main form */
+
+ .input_field{
+
+  width: 50%;
+  height: 35px;
+  margin-top: 10px;
+  padding: 15px;
+  margin-left: 40px;
+
+
+}
+
+
+  /* main form */
+
+   #btn-submit {
+
+  background-color: #A8A8AB;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 12%;
+  width: 15%;
+  position:absolute;
+}
+
+ #btn-submit:hover {
+
+  background-color: #0C80C3;
+
+}
+
+
+
+   #btn-cancel {
+
+  background-color: #A8A8AB;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 12%;
+  position: absolute;
+  width: 15%;
+}
+
+ #btn-cancel:hover {
+
+  background-color: #0C80C3;
+
+}
+
+   #register {
+
+  background-color: #A8A8AB;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 12%;
+  width: 15%;
+  position: absolute;
+}
+
+ #register:hover {
+
+  background-color: #0C80C3;
+
+}
+
+
+
+/*navbar*/
+
+.gennavb {
+  background-color: #5C607C;
+  overflow: hidden;
+
+
+}
+
+.gennavb a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 10px;
+  text-decoration: none;
+  font-size: 15px;
+  width: 12%;
+}
+
+.gennavb a:hover {
+  background-color: #191572;
+  color: #ffffff;
+}
+
+.active {
+  background-color: #191572;
+  color: white;
+}
+
+
+.gennavb .icon {
+
+  display: none;
+}
+
+/* footer */
+
+div.footer img {
+
+  width: 35%;
+  padding-bottom: 50px;
+}
+
+div.footer h3 {
+
+  font-size: 35px;
+}
+
+
+
+}
+
+
+
+/* -------------------------------------------------------- laptop screen---------------------------------------------------------*/
+
+
+@media only screen and (min-width: 900px) {
+
+  /*logo*/
+
+
+#awlogo {
+
+  width: 25%;
+  padding: 25px;
+
+}
+
+
+div.footer img {
+
+  width: 25%;
+  padding-bottom: 50px;
+}
+
+ .input_field{
+
+  width: 50%;
+  height: 35px;
+  margin-top: 10px;
+  padding: 15px;
+  margin-left: 100px;
+
+
+}
+
+
+
+
+
+
+}

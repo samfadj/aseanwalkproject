@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<title>ASEAN > Login </title>
+	<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="login.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Aleo' rel='stylesheet'>
+		<script type="text/javascript" src="globalJAVA.js"></script>
+		<link rel="stylesheet" type="text/css" href="button.css">
+
+
+		<script type="text/javascript">
+		
+			/* for reponsive navbar */
+			function myFunction() {
+			  var x = document.getElementById("navbar01");
+			  if (x.className === "gennavb") {
+			    x.className += " responsive";
+			  } else {
+			    x.className = "gennavb";
+			  }
+			}
+
+		</script>
+
+			<style type="text/css">
+		
+		body {
+
+			font-family: 'Aleo';
+		}
+
+		</style>
+
+</head>
+
+<body>
+	<header>
+	<!-- logo + topbar --> 
+			<div class="navheader">
+				
+			<div class="topbar">
+					<a href="#"><img id="eye" src="eyeicon.png"></a>
+					<a href="support.html"> <img id="help" src="helpicon.png"></a>
+					<a href="login.html"> <img id="login" src="loginicon.png"></a>
+				</div>
+
+				<div>	
+					<a href="index.html"><img id="awlogo" src="ASEAN Walk LOGO.png"></a>
+				</div>
+			</div>
+
+			<!-- general navbar --> 
+			<div class="gennavb" id="navbar01">
+			
+						  <a href="index.html">Home</a>
+						  <a href="aboutus.html">About Us</a>
+						  <a href="eat.html">Eat!</a>
+						  <a href="walk.html">Walk!</a>
+						  <a href="rest.html">Rest!</a>
+						  <a href="booking.html"  class="active" >Book Now! </a>
+						  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+						    <i class="fa fa-bars"></i>
+						  </a>
+
+			</div>
+
+
+			<div class="maincontent">
+				
+				<h1> Welcome to the Log In Page! </h1>
+
+				<form id="login" action="memberonly.html">
+						  Email:<br>
+						  <input type="email" name="footmail" placeholder="Please Enter Your E-mail here" class="box01" id="footmail" onchange="checkfootMail(document)" pattern="[a-zA-Z0-9!#$%&amp;'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*" >
+						  <p id="footmail_msg" style="color:red;"></p>
+
+						  <br>
+						  Password:<br>
+						  <input type="password" name="footpass" placeholder="Please Enter your Password here" class="box02" id="footpass" onchange="checkfootPass (document)">
+						  <p id="footpass_msg" style="color:red;"></p>
+						  <br><br>
+
+						  <input type="submit" value="Login" onclick="return validateInfoFoot(document)"> 
+						</form> 
+
+
+			</div>
+
+
+		</header>
+
+
+		<footer>
+				<div class="footer">
+
+				
+
+				<div id="footerform">
+					<h3> Ready for the Adventure ? </h3>
+
+						<br>	
+						<a href="login.html"><button id="regbut">Login</button></a>
+						<br>
+
+						<br>
+
+						New to ASEAN Walk ? Join Us!
+
+						<br>
+						<br>
+
+						<a href="register.html"><button id="regbut">Sign Up</button></a>
+				</div>
+
+
+
+		
+				<img src="socialmedia01.png">
+
+			
+				<br>
+
+
+				<p> Copyrights &copy; 2019 All Rights Reserved ASEAN Walk </p>
+
+			</div>
+		
+
+
+	</footer>
+
+
+
+		</footer>
+
+</body>
+
+
+
+</html>

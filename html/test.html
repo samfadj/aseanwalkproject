@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>test 123</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="test.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Aleo' rel='stylesheet'>
+
+  <script>
+    filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("btncontainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
+
+  </script>
+
+
+</head>
+<body>
+
+<h3>Food Categories</h3>
+
+
+  <div id="btncontainer">
+      <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+      <button class="btn" onclick="filterSelection('traditional')"> Traditional</button>
+      <button class="btn" onclick="filterSelection('western')"> Western</button>
+      <button class="btn" onclick="filterSelection('japanese')"> Japanese</button>
+      <button class="btn" onclick="filterSelection('chinese')"> Chinese</button>
+       <button class="btn" onclick="filterSelection('korean')"> Korean</button>
+      <button class="btn" onclick="filterSelection('cafendesserts')"> Cafe & Desserts</button>
+      <button class="btn" onclick="filterSelection('clubsnbars')"> Clubs & Bars</button>
+  </div>
+
+  <div class="container">
+
+    <div class="filterDiv traditional">
+        <strong>Thian Thian Restaurant</strong>
+
+        <img src="bru_tian.jpg" style="width: 100%;">
+
+        <p> 
+
+          <strong> Location:</strong>  Street 123 Street 123 
+          <br>
+          <strong> Rating: </strong>  4/5
+
+        </p>
+
+    </div>
+
+
+    <div class="filterDiv traditional">
+     <strong> Baik Restaurant</strong>
+
+        <img src="bru_eat02.jpg" style="width: 100%;">
+        <p> <strong>Location:</strong> Street 123 Street 123 </p>
+    </div>
+
+
+    <div class="filterDiv traditional">
+      <strong>Aminah Arif Restaurant</strong>
+
+        <img src="bru_eat03.jpg" style="width: 100%;">
+        <p> <strong> Location:</strong> Street 123 Street 123 </p>
+    </div>
+
+     <div class="filterDiv western">
+        <strong>The John</strong>
+
+        <img src="bru_west.jpg" style="width: 100%;">
+
+        <p> <strong> Location:</strong>  Street 123 Street 123 </p>
+    </div>
+
+
+    <div class="filterDiv western">
+     <strong> High Rise Restaurant</strong>
+
+        <img src="bru_west02.jpg" style="width: 100%;">
+        <p> <strong>Location:</strong> Street 123 Street 123 </p>
+    </div>
+
+
+    <div class="filterDiv western">
+      <strong>The Heaven</strong>
+
+        <img src="bru_west.jpg" style="width: 100%;">
+        <p> <strong> Location:</strong> Street 123 Street 123 </p>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="filterDiv japanese">Cat</div>
+    <div class="filterDiv japanese">Dog</div>
+    <div class="filterDiv japanese">Melon</div>
+    <div class="filterDiv chinese">Kiwi</div>
+    <div class="filterDiv chinese">Banana</div>
+    <div class="filterDiv chinese">Lemon</div>
+    <div class="filterDiv korean">Cow</div>
+    <div class="filterDiv korean">Cow</div>
+    <div class="filterDiv korean">Cow</div>
+    <div class="filterDiv cafendesserts">Kiwi</div>
+    <div class="filterDiv cafendesserts">Banana</div>
+    <div class="filterDiv cafendesserts">Lemon</div>
+    <div class="filterDiv clubsnbars">Cow</div>
+    <div class="filterDiv clubsnbars">Cow</div>
+    <div class="filterDiv clubsnbars">Cow</div>
+  </div>
+
+
+
+
+</body>
+</html>

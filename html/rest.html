@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<title>ASEAN Walk > Book Now! </title>
+	<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="rest.css">
+				<script src="globalJAVA.js"></script>
+		<link rel="stylesheet" type="text/css" href="button.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Aleo' rel='stylesheet'>
+		<link rel="stylesheet" type="text/css" href="eatsub01.css">
+
+
+		<script type="text/javascript">
+		
+			/* for reponsive navbar */
+			function myFunction() {
+			  var x = document.getElementById("navbar01");
+			  if (x.className === "gennavb") {
+			    x.className += " responsive";
+			  } else {
+			    x.className = "gennavb";
+			  }
+			}
+
+		</script>
+
+			<style type="text/css">
+		
+		body {
+
+			font-family: 'Aleo';
+		}
+
+		</style>
+
+</head>
+
+<body>
+	<header>
+	<!-- logo + topbar --> 
+			<div class="navheader">
+				
+				<div class="topbar">
+					<a href="#"><img id="eye" src="eyeicon.png"></a>
+					<a href="support.html"> <img id="help" src="helpicon.png"></a>
+					<a href="login.html"> <img id="login" src="loginicon.png"></a>
+				</div>
+
+				<div>	
+					<a href="index.html"><img id="awlogo" src="ASEAN Walk LOGO.png"></a>
+				</div>
+			</div>
+
+			<!-- general navbar --> 
+			<div class="gennavb" id="navbar01">
+			
+						  <a href="index.html">Home</a>
+						  <a href="aboutus.html">About Us</a>
+						  <a href="eat.html" >Eat!</a>
+						  <a href="walk.html">Walk!</a>
+						  <a href="rest.html"  class="active">Rest!</a>
+						  <a href="booking.html">Book Now! </a>
+						  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+						    <i class="fa fa-bars"></i>
+						  </a>
+
+			</div>
+
+
+			<div class="maincontent">
+				
+				<h1> It's Time to Rest! </h1>
+
+				<!-- filter buttons -->
+					  <div id="btncontainer">
+					      <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+					      <button class="btn" onclick="filterSelection('brunei')"> Brunei</button>
+					      <button class="btn" onclick="filterSelection('cambodia')"> Cambodia</button>
+					      <button class="btn" onclick="filterSelection('indonesia')"> Indonesia</button>
+					      <button class="btn" onclick="filterSelection('laos')"> Laos</button>
+					       <button class="btn" onclick="filterSelection('malaysia')"> Malaysia</button>
+					      <button class="btn" onclick="filterSelection('myanmar')"> Myanmar</button>
+					      <button class="btn" onclick="filterSelection('philippines')"> Philippines</button>
+					      <button class="btn" onclick="filterSelection('singapore')"> Singapore </button>
+					      <button class="btn" onclick="filterSelection('thailand')"> Thailand</button>
+					      <button class="btn" onclick="filterSelection('vietnam')"> Vietnam</button>
+					  </div>
+
+					  <!-- filter elements -->
+
+					  <div class="container">
+
+					    <div class="filterDiv brunei">
+					        <a href="indo_rockbar.html"><strong>Kuala Belait</strong></a>
+
+					        <a href="indo_rockbar.html"> <img src="hotel01.jpg" style="width: 100%;"> </a>
+					        <p> 
+
+					          <strong> Location:</strong>  Street 123 Street 123 
+					          <br>
+					          <strong> Rating: </strong>    <span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+
+					        </p>
+
+					    </div>
+
+
+					    <div class="filterDiv brunei">
+					     <a href="indo_rockbar.html"><strong>Bandar Seri Bengawan</strong></a>
+
+					        <a href="indo_rockbar.html"><img src="hotel02.jpg" style="width: 100%;"></a>
+					        <p> 
+					        	<strong>Location:</strong> Street 123 Street 123 <br>
+					          	<strong> Rating: </strong>  <span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+
+					        </p>
+					    </div>
+
+
+					    <div class="filterDiv brunei">
+					      <a href="indo_rockbar.html"><strong>Seria</strong></a>
+
+					        <a href="indo_rockbar.html"><img src="hotel03.jpg" style="width: 100%;"></a>
+					        <p> <strong> Location:</strong> Street 123 Street 123 <br>
+					          	<strong> Rating: </strong>  <span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+
+					        </p>
+					    </div>
+
+					     <div class="filterDiv cambodia">
+					        <a href="indo_rockbar.html"><strong>Phnom Penh</strong></a>
+
+					        <a href="indo_rockbar.html"><img src="hotel04.jpg" style="width: 100%;">
+</a>
+					        <p> <strong> Location:</strong>  Street 123 Street 123 <br>
+					          <strong> Rating: </strong>    <span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+															<span class="fa fa-star"></span>
+					        </p>
+					    </div>
+
+
+					    <div class="filterDiv cambodia">
+					     <a href="indo_rockbar.html"><strong> Siem Reap</strong></a>
+
+					        <a href="indo_rockbar.html"><img src="hotel05.jpg" style="width: 100%;"></a>
+					        <p> <strong>Location:</strong> Street 123 Street 123 <br>
+					          <strong> Rating: </strong>    <span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+															<span class="fa fa-star"></span>
+					        </p>
+					    </div>
+
+
+					    <div class="filterDiv cambodia">
+					      <a href="indo_rockbar.html"><strong>Battambang</strong></a>
+
+					        <a href="indo_rockbar.html"><img src="hotel06.jpg" style="width: 100%;"></a>
+					        <p> <strong> Location:</strong> Street 123 Street 123 <br>
+					          <strong> Rating: </strong>    <span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+															<span class="fa fa-star"></span>
+					        </p>
+					    </div>
+
+					     <div class="filterDiv indonesia">
+					        <a href="indo_rockbar.html"><strong>Bali</strong></a>
+
+					       <a href="indo_rockbar.html"> <img src="hotel07.jpg" style="width: 100%;"> </a>
+
+					        <p> 
+
+					          <strong> Location:</strong>  Street 123 Street 123 
+					          <br>
+					          <strong> Rating: </strong>    <span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+
+					        </p>
+
+					    </div>
+
+
+					    <div class="filterDiv indonesia">
+					     <a href="indo_rockbar.html"><strong> Surabaya </strong></a>
+
+					       <a href="indo_rockbar.html"> <img src="hotel08.jpg" style="width: 100%;"></a>
+					        <p> 
+					        	<strong>Location:</strong> Street 123 Street 123 <br>
+					          	<strong> Rating: </strong>  <span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+
+					        </p>
+					    </div>
+
+
+					    <div class="filterDiv indonesia">
+					      <a href="indo_rockbar.html"><strong>Jakarta</strong></a>
+
+					        <a href="indo_rockbar.html"><img src="hotel09.jpg" style="width: 100%;"></a>
+					        <p> <strong> Location:</strong> Street 123 Street 123 <br>
+					          	<strong> Rating: </strong>  <span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+
+					        </p>
+					    </div>
+
+					     <div class="filterDiv laos">
+					        <a href="indo_rockbar.html"><strong>Vientiane</strong></a>
+
+					        <a href="indo_rockbar.html"><img src="hotel01.jpg" style="width: 100%;"></a>
+
+					        <p> <strong> Location:</strong>  Street 123 Street 123 <br>
+					          <strong> Rating: </strong>    <span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+					        </p>
+					    </div>
+
+
+					    <div class="filterDiv laos">
+					     <a href="indo_rockbar.html"><strong> Pakse </strong></a>
+
+					        <a href="indo_rockbar.html"><img src="hotel02.jpg" style="width: 100%;"></a>
+					        <p> <strong>Location:</strong> Street 123 Street 123 <br>
+					          <strong> Rating: </strong>    <span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+															<span class="fa fa-star"></span>
+					        </p>
+					    </div>
+
+
+					    <div class="filterDiv laos">
+					      <a href="indo_rockbar.html"><strong>Luang Prabang</strong></a>
+
+					        <a href="indo_rockbar.html"><img src="hotel03.jpg" style="width: 100%;"></a>
+					        <p> <strong> Location:</strong> Street 123 Street 123 <br>
+					          <strong> Rating: </strong>    <span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+															<span class="fa fa-star"></span>
+					        </p>
+					    </div>
+
+
+					     <div class="filterDiv malaysia">
+					        <a href="indo_rockbar.html"><strong>Kuala Lumpur</strong></a>
+
+					        <a href="indo_rockbar.html"><img src="hotel04.jpg" style="width: 100%;"></a>
+
+					        <p> <strong> Location:</strong>  Street 123 Street 123 <br>
+					          <strong> Rating: </strong>    <span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+															<span class="fa fa-star"></span>
+					        </p>
+					    </div>
+
+
+					    <div class="filterDiv malaysia">
+					     <a href="indo_rockbar.html"><strong> Penang </strong></a>
+
+					        <a href="indo_rockbar.html"><img src="hotel05.jpg" style="width: 100%;"></a>
+					        <p> <strong>Location:</strong> Street 123 Street 123 <br>
+					          <strong> Rating: </strong>    <span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+															<span class="fa fa-star"></span>
+					        </p>
+					    </div>
+
+
+					    <div class="filterDiv malaysia">
+					      <a href="indo_rockbar.html"><strong>Johor Bahru</strong></a>
+
+					       <a href="indo_rockbar.html"><img src="hotel06.jpg" style="width: 100%;"></a>
+					        <p> <strong> Location:</strong> Street 123 Street 123 <br>
+					          <strong> Rating: </strong>    <span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+															<span class="fa fa-star"></span>
+					        </p>
+					    </div>
+
+					     <div class="filterDiv myanmar">
+					        <a href="indo_rockbar.html"><strong>Yangon</strong></a>
+
+					        <a href="indo_rockbar.html"><img src="hotel07.jpg" style="width: 100%;"></a>
+
+					        <p> 
+
+					          <strong> Location:</strong>  Street 123 Street 123 
+					          <br>
+					          <strong> Rating: </strong>    <span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+															<span class="fa fa-star"></span>
+
+					        </p>
+
+					    </div>
+
+
+					    <div class="filterDiv myanmar">
+					     <a href="indo_rockbar.html"><strong> Mandalay</strong></a>
+
+					        <a href="indo_rockbar.html"><img src="hotel08.jpg" style="width: 100%;"></a>
+					        <p> 
+					        	<strong>Location:</strong> Street 123 Street 123 <br>
+					          	<strong> Rating: </strong>  <span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+
+					        </p>
+					    </div>
+
+
+					    <div class="filterDiv myanmar">
+					      <a href="indo_rockbar.html"><strong>Naypyidaw</strong></a>
+
+					       <a href="indo_rockbar.html"> <img src="hotel09.jpg" style="width: 100%;"></a>
+					        <p> <strong> Location:</strong> Street 123 Street 123 <br>
+					          	<strong> Rating: </strong>  <span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+
+					        </p>
+					    </div>
+
+					    <div class="filterDiv philippines">
+					        <a href="indo_rockbar.html"><strong>Manila</strong></a>
+
+					        <a href="indo_rockbar.html"><img src="hotel01.jpg" style="width: 100%;"></a>
+
+					        <p> <strong> Location:</strong>  Street 123 Street 123 <br>
+					          <strong> Rating: </strong>    <span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+					        </p>
+					    </div>
+
+
+					   <div class="filterDiv philippines">
+					     <a href="indo_rockbar.html"><strong> Cebu </strong></a>
+
+					       <a href="indo_rockbar.html"> <img src="hotel02.jpg" style="width: 100%;"> </a>
+					        <p> <strong>Location:</strong> Street 123 Street 123 <br>
+					          <strong> Rating: </strong>    <span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+															<span class="fa fa-star"></span>
+					        </p>
+					    </div>
+
+
+					    <div class="filterDiv philippines">
+					      <a href="indo_rockbar.html"><strong> Quezon City </strong></a>
+
+					        <a href="indo_rockbar.html"><img src="hotel03.jpg" style="width: 100%;"></a>
+					        <p> <strong> Location:</strong> Street 123 Street 123 <br>
+					          <strong> Rating: </strong>    <span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+															<span class="fa fa-star"></span>
+					        </p>
+					    </div>
+
+					     <div class="filterDiv singapore">
+					        <a href="indo_rockbar.html"><strong>Tampines</strong></a>
+
+					        <a href="indo_rockbar.html"><img src="hotel04.jpg" style="width: 100%;"></a>
+
+					        <p> <strong> Location:</strong>  Street 123 Street 123 <br>
+					          <strong> Rating: </strong>    <span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+					        </p>
+					    </div>
+
+
+					   <div class="filterDiv singapore">
+					     <a href="indo_rockbar.html"><strong> Bedok </strong></a>
+
+					       <a href="indo_rockbar.html"> <img src="hotel05.jpg" style="width: 100%;"> </a>
+					        <p> <strong>Location:</strong> Street 123 Street 123 <br>
+					          <strong> Rating: </strong>    <span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+															<span class="fa fa-star"></span>
+					        </p>
+					    </div>
+
+
+					    <div class="filterDiv singapore">
+					      <a href="indo_rockbar.html"><strong> Orchard </strong></a>
+
+					        <a href="indo_rockbar.html"><img src="hotel06.jpg" style="width: 100%;"></a>
+					        <p> <strong> Location:</strong> Street 123 Street 123 <br>
+					          <strong> Rating: </strong>    <span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+															<span class="fa fa-star"></span>
+					        </p>
+					    </div>
+
+
+					     <div class="filterDiv thailand">
+					        <a href="indo_rockbar.html"><strong>Bangkok</strong></a>
+
+					        <a href="indo_rockbar.html"><img src="hotel07.jpg" style="width: 100%;"></a>
+
+					        <p> <strong> Location:</strong>  Street 123 Street 123 <br>
+					          <strong> Rating: </strong>    <span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+					        </p>
+					    </div>
+
+
+					   <div class="filterDiv thailand">
+					     <a href="indo_rockbar.html"><strong> Phuket </strong></a>
+
+					       <a href="indo_rockbar.html"> <img src="hotel08.jpg" style="width: 100%;"> </a>
+					        <p> <strong>Location:</strong> Street 123 Street 123 <br>
+					          <strong> Rating: </strong>    <span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+															<span class="fa fa-star"></span>
+					        </p>
+					    </div>
+
+
+					    <div class="filterDiv thailand">
+					      <a href="indo_rockbar.html"><strong> Chiang Mai </strong></a>
+
+					        <a href="indo_rockbar.html"><img src="hotel09.jpg" style="width: 100%;"></a>
+					        <p> <strong> Location:</strong> Street 123 Street 123 <br>
+					          <strong> Rating: </strong>    <span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+															<span class="fa fa-star"></span>
+					        </p>
+					    </div>
+
+					     <div class="filterDiv vietnam">
+					        <a href="indo_rockbar.html"><strong>Ho Chi Minh City</strong></a>
+
+					        <a href="indo_rockbar.html"><img src="hotel01.jpg" style="width: 100%;"></a>
+
+					        <p> <strong> Location:</strong>  Street 123 Street 123 <br>
+					          <strong> Rating: </strong>    <span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+					        </p>
+					    </div>
+
+
+					   <div class="filterDiv vietnam">
+					     <a href="indo_rockbar.html"><strong> Hanoi </strong></a>
+
+					       <a href="indo_rockbar.html"> <img src="hotel02.jpg" style="width: 100%;"> </a>
+					        <p> <strong>Location:</strong> Street 123 Street 123 <br>
+					          <strong> Rating: </strong>    <span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+															<span class="fa fa-star"></span>
+					        </p>
+					    </div>
+
+
+					    <div class="filterDiv vietnam">
+					      <a href="indo_rockbar.html"><strong> Danang </strong></a>
+
+					        <a href="indo_rockbar.html"><img src="hotel03.jpg" style="width: 100%;"></a>
+					        <p> <strong> Location:</strong> Street 123 Street 123 <br>
+					          <strong> Rating: </strong>    <span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+															<span class="fa fa-star"></span>
+					        </p>
+					    </div>
+
+
+
+
+
+
+
+
+
+			</div>
+
+
+		</header>
+
+
+		<footer>
+				<div class="footer">
+
+				
+
+				<div id="footerform">
+					<h3> Ready for the Adventure ? </h3>
+						
+						<a href="login.html"><button id="regbut">Login</button></a>
+						<br>
+
+						<br>
+
+						New to ASEAN Walk ? Join Us!
+
+						<br>
+						<br>
+
+						<a href="register.html"><button id="regbut">Sign Up</button></a>
+				</div>
+
+
+
+		
+				<img src="socialmedia01.png">
+
+			
+				<br>
+
+
+				<p> Copyrights &copy; 2019 All Rights Reserved ASEAN Walk </p>
+
+			</div>
+
+
+	</footer>
+
+
+
+		</footer>
+
+</body>
+
+
+
+</html>

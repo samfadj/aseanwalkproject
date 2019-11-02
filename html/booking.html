@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<title>ASEAN Walk > Rest! </title>
+	<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="booking.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Aleo' rel='stylesheet'>
+		<script type="text/javascript" src="globalJAVA.js"></script>
+		<link rel="stylesheet" type="text/css" href="button.css">
+
+
+
+		<script type="text/javascript">
+		
+			/* for reponsive navbar */
+			function myFunction() {
+			  var x = document.getElementById("navbar01");
+			  if (x.className === "gennavb") {
+			    x.className += " responsive";
+			  } else {
+			    x.className = "gennavb";
+			  }
+			}
+
+		</script>
+
+			<style type="text/css">
+		
+		body {
+
+			font-family: 'Aleo';
+		}
+
+		</style>
+
+</head>
+
+<body>
+	<header>
+	<!-- logo + topbar --> 
+			<div class="navheader">
+				
+			<div class="topbar">
+					<a href="#"><img id="eye" src="eyeicon.png"></a>
+					<a href="support.html"> <img id="help" src="helpicon.png"></a>
+					<a href="login.html"> <img id="login" src="loginicon.png"></a>
+				</div>
+				
+				<div>	
+					<a href="index.html"><img id="awlogo" src="ASEAN Walk LOGO.png"></a>
+				</div>
+			</div>
+
+			<!-- general navbar --> 
+			<div class="gennavb" id="navbar01">
+			
+						  <a href="index.html">Home</a>
+						  <a href="aboutus.html">About Us</a>
+						  <a href="eat.html" >Eat!</a>
+						  <a href="walk.html">Walk!</a>
+						  <a href="rest.html"">Rest!</a>
+						  <a href="booking.html"  class="active" >Book Now! </a>
+						  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+						    <i class="fa fa-bars"></i>
+						  </a>
+
+			</div>
+
+
+			<div class="maincontent">
+				
+				<h1> Booking Page </h1>
+
+				<form action="usercheck.html" method="get">
+
+					<fieldset>
+						
+						<legend>Select Your Destination:</legend>
+
+
+
+						 <p> City </p>
+						    <select id="citylist" name="city">
+								 <option disabled="disabled">----</option>
+						      <option disabled="disabled">Brunei</option>
+						       <option disabled="disabled">----</option>
+						       <option value="bandar"> Bandar Seri Bengawan </option>
+						      <option value="kualabelait"> Kuala Belait </option>
+						      <option value="seria"> Seria </option>
+						   
+						       <option disabled="disabled">----</option>
+
+
+						      <option disabled="disabled">Cambodia</option>
+						      <option disabled="disabled">----</option>
+						      <option value="phnompenh"> Phnom Penh </option>
+						      <option value="siemreap"> Sieam Reap </option>
+						      <option value="battambang"> Battambang </option>
+
+						       <option disabled="disabled">----</option>
+
+	
+
+						      <option disabled="disabled">Indonesia</option>
+						      <option disabled="disabled">----</option>
+						      <option value="bali">Bali</option>
+						      <option value="bandung">Surabaya</option>
+						      <option value="jakarta">Jakarta</option>
+						     
+						       <option disabled="disabled">----</option>
+
+						      <option disabled="disabled">Laos</option>
+						      <option disabled="disabled">----</option>
+						      <option value="vientiane"> Vientiane </option>
+						      <option value="pakse"> Pakse </option>
+						      <option value="luangprabang"> Luang Prabang </option>
+					
+						       <option disabled="disabled">----</option>
+
+						      <option disabled="disabled">Malaysia</option>
+						      <option disabled="disabled">----</option>
+						      <option value="kualalumpur"> Kuala Lumpur</option>
+						      <option value="penang"> Penang </option>
+						      <option value="johor"> Johor Bahru</option>
+			
+						       <option disabled="disabled">----</option>
+
+
+						      <option disabled="disabled">Myanmar</option>
+						      <option disabled="disabled">----</option>
+						      <option value="yangong">Yangon</option>
+						      <option value="mandalay">Mandalay </option>
+						      <option value="naypyidaw"> Naypyidaw </option>
+						
+						       <option disabled="disabled">----</option>
+
+						      <option disabled="disabled">Philippines</option>
+						      <option disabled="disabled">----</option>
+						      <option value="manila">Manila</option>
+						      <option value="cebu">Cebu</option>
+						      <option value="quezoncity">Quezon City</option>
+						
+						      <option disabled="disabled">----</option>
+
+
+						      <option disabled="disabled">Singapore</option>
+						      <option disabled="disabled">----</option>
+						      <option value="tampines"> Tampines </option>
+						      <option value="bedok"> Bedok </option>
+						      <option value="orchard"> Orchard </option>
+					
+						       <option disabled="disabled">----</option>
+
+						      <option disabled="disabled">Thailand</option>
+						        <option disabled="disabled">----</option>
+						       <option value="bangkok">Bangkok</option>
+						      <option value="phuket">Phuket</option>
+						      <option value="chiangmai">Chiang Mai</option>
+						
+						      <option disabled="disabled">----</option>
+
+
+						      <option disabled="disabled">Vietnam</option>
+						        <option disabled="disabled">----</option>
+						       <option value="hochiminh"> Ho Chi Minh City</option>
+						      <option value="hanoi">Hanoi</option>
+						      <option value="danang">Da Nang</option>
+						 
+						      <option disabled="disabled">----</option>
+						    </select>
+
+					</fieldset>
+
+					<fieldset>
+							<legend>Select Hotel</legend>
+
+								<p>Hotel</p>
+
+								<select>
+								<option value="shangrila"> Shangri-La Hotel </option>
+
+
+									<option value="fairmont"> Fairmont Hotel </option>
+									<option value="marinabaysand"> Marina Bay Sands</option>
+
+
+
+								</select>
+
+
+
+					</fieldset>
+
+
+					<fieldset> 
+
+						<legend>Please Select Preferred Timing:</legend>
+
+						    <div class="date">
+						    	<p> Check-in Date </p>
+						    	<input type="date" name="Checkin Date">
+
+						    	<p>Check-out Date</p>
+						    	<input type="date" name="Checkout Date">
+						    	
+						    </div>
+
+
+					</fieldset>
+
+
+						<fieldset class="roomtypefield"> 
+
+						<legend>Please Select Room Preferences:</legend>
+
+
+							<p>Number of Rooms (Min. 1 and Max. 5)</p>
+						  <input type="number" name="quantity" min="1" max="5" style="margin-left: 30%;">
+
+						  <br>
+
+						  <input type="submit" name="submit">
+
+
+						</fieldset>
+
+
+
+
+
+					<br>
+					
+
+				</form>
+
+
+			</div>
+
+
+		</header>
+
+
+		<footer>
+				<div class="footer">
+
+				
+
+				<div id="footerform">
+					<h3> Ready for the Adventure ? </h3>
+						
+						<a href="login.html"><button id="regbut">Login</button></a>
+						<br>
+
+						<br>
+
+						New to ASEAN Walk ? Join Us!
+
+						<br>
+						<br>
+
+						<a href="register.html"><button id="regbut">Sign Up</button></a>
+				</div>
+
+
+
+		
+				<img src="socialmedia01.png">
+
+			
+				<br>
+
+
+				<p> Copyrights &copy; 2019 All Rights Reserved ASEAN Walk </p>
+
+			</div>
+
+	</footer>
+
+
+
+		</footer>
+
+</body>
+
+
+
+</html>

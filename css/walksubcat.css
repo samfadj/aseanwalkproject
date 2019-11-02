@@ -1,0 +1,542 @@
+/* -------------------------------------------------------- mobile screen---------------------------------------------------------*/
+/* reset margin and padding */
+*{
+
+	margin: 0; 
+	padding: 0;
+}
+
+/*categories */
+
+.maincontent h1, h2 {
+
+  text-align: center;
+  font-size: 25px;
+  padding: 25px;
+
+}
+
+.maincontent img {
+
+  height: 200px;
+}
+
+.maincontent p {
+
+  padding: 10px;
+  line-height: 25px;
+}
+
+ h2 {
+
+  background-color: #5C607C;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h3 {
+
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  opacity: 0.7;
+  width: 100%;
+}
+
+a {
+
+ text-decoration: none;
+}
+
+
+
+/*overall container */
+div.wrapper {
+
+	width: 100%;
+
+}
+
+div.topbar img{
+
+	width: 25px;
+	float: right;
+	padding: 5px;
+
+}
+
+
+
+/* categories list */
+
+div.catcontainer {
+    display: table; 
+    width: 100%; 
+
+
+}
+
+div.col01 {
+  display: block;
+    width: 80%;
+    margin-left:10%;
+
+}
+
+div.maincontent h3 {
+
+  padding: 5px;
+  text-align: center;
+
+}
+
+
+
+div.col02 {
+  display: block;
+    width: 80%;
+    margin-left:10%;
+ 
+}
+
+div.col03 {
+  display: block;
+    width: 80%;
+    margin-left:10%;
+
+}
+
+
+div.col01 img{
+    display: block;
+    width: 100%;
+    margin-bottom: 5%;
+
+}
+
+div.col02 img{
+ display: block;
+    width: 100%;
+    margin-bottom: 5%;
+
+}
+
+div.col03 img{
+ display: block;
+    width: 100%;
+    margin-bottom: 5%;
+
+
+}
+
+div.col01 p {
+  width: 100%;
+ 
+}
+
+div.col02 p {
+width: 100%;
+
+}
+
+div.col03 p {
+width: 100%;
+
+}
+
+
+
+
+
+
+
+#awlogo {
+
+	width: 100%;
+  clear: both;
+
+}
+
+/*navbar*/
+
+.gennavb {
+  background-color: #5C607C;
+  overflow: hidden;
+
+}
+
+.gennavb a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.gennavb a:hover {
+  background-color: #191572;
+  color: #ffffff;
+}
+
+.active {
+  background-color: #191572;
+  color: white;
+}
+
+/* footer */
+.footer {
+
+  background-color: #5C607C;
+  text-align: center;
+  padding: 20px;
+  color: #ffffff;
+  height: 70%;
+  clear: both;
+}
+
+#footerform h3 {
+
+  color: #ffffff;
+  padding-bottom: 10px;
+
+}
+
+/*form */
+#footerform {
+
+  width: 100%;
+  float: left;
+}
+
+div.footer img {
+
+  width: 75%;
+  padding-bottom: 50px;
+}
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #56556F;
+  opacity: 0.5; /* Firefox */
+  text-align: center;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #56556F;
+  text-align: center;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #56556F;
+  text-align: center;
+}
+
+/*footer form */
+
+  .box01 , .box02{
+
+  width: 50%;
+  height: 35px;
+  margin-top: 10px;
+}
+
+  div .footer img {
+
+    width: 75%;
+    padding-bottom: 50px;
+  }
+
+  input[type=submit] {
+
+  background-color: #A8A8AB;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+input[type=submit]:hover {
+
+  background-color: #0C80C3;
+
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 700px) {
+
+.gennavb a:not(:first-child) {display: none;}
+  .gennavb a.icon {
+    float: right;
+    display: block;
+  }
+
+  .gennavb.responsive {position: relative;}
+  .gennavb.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .gennavb.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+
+}
+
+
+
+/* -------------------------------------------------------- tablet screen---------------------------------------------------------*/
+
+@media only screen and (min-width: 700px) {
+
+
+
+#awlogo {
+
+  width: 40%;
+  padding: 25px;
+
+}
+
+
+.maincontent p {
+
+  padding: 10px;
+  width: 100%;
+}
+
+.maincontent h3 {
+
+  width: 100%;
+}
+
+/* topbar --> support, login, blind people support */
+div.topbar img{
+
+  width: 45px;
+  float: right;
+  padding: 15px;
+
+
+}
+
+
+/*navbar*/
+
+.gennavb {
+  background-color: #5C607C;
+  overflow: hidden;
+
+
+}
+
+.gennavb a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 10px;
+  text-decoration: none;
+  font-size: 15px;
+  width: 12%;
+}
+
+.gennavb a:hover {
+  background-color: #191572;
+  color: #ffffff;
+}
+
+.active {
+  background-color: #191572;
+  color: white;
+}
+
+
+.gennavb .icon {
+
+  display: none;
+}
+
+
+
+/* categories list */
+
+div.catcontainer {
+    display: table; 
+    width: 100%; 
+
+
+}
+
+div.maincontent h3 {
+
+  padding: 5px;
+  text-align: center;
+}
+
+
+div.col01 {
+  display: table-cell;
+    width: 25%;
+    padding-left: 35px;
+
+}
+
+
+div.col02 {
+  display: table-cell;
+    width: 25%;
+    padding: 10px;
+ 
+}
+
+div.col03 {
+  display: table-cell;
+    width: 25%;
+    padding-right: 35px;
+
+}
+
+
+div.col01 img{
+    
+    width: 100%;
+    margin-bottom: 5%;
+
+}
+
+div.col02 img{
+
+    width: 100%;
+    margin-bottom: 5%;
+
+}
+
+div.col03 img{
+ 
+    width: 100%;
+    margin-bottom: 5%;
+
+
+}
+
+
+/* footer */
+
+div.footer img {
+
+  width: 35%;
+  padding-bottom: 50px;
+}
+
+div.footer h3 {
+
+  font-size: 35px;
+}
+
+
+
+}
+
+
+
+/* -------------------------------------------------------- laptop screen---------------------------------------------------------*/
+
+
+@media only screen and (min-width: 900px) {
+
+  /*logo*/
+
+#awlogo {
+
+  width: 25%;
+  padding: 25px;
+
+}
+.maincontent {
+
+  width: 75%;
+  margin-left: 12%;
+}
+
+.maincontent h1 {
+  font-size: 50px;
+}
+
+
+div.col01 {
+  display: table-cell;
+    width: 20%;
+ 
+
+}
+
+
+div.col02 {
+  display: table-cell;
+    width: 20%;
+
+
+ 
+}
+
+div.col03 {
+  display: table-cell;
+    width: 20%;
+
+
+}
+
+
+div.col01 img{
+    
+    width: 100%;
+    margin-bottom: 5%;
+
+
+
+}
+
+div.col02 img{
+
+    width: 100%;
+    margin-bottom: 5%;
+
+
+}
+
+div.col03 img{
+ 
+    width: 100%;
+    margin-bottom: 5%;
+
+}
+
+
+
+
+
+
+
+div.footer img {
+
+  width: 25%;
+  padding-bottom: 50px;
+}
+
+
+
+
+
+
+}

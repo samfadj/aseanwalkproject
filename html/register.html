@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<title>ASEAN Walk > Eat > Cambodia > Malis </title>
+	<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="formfunc.css">
+		<link rel="stylesheet" type="text/css" href="button.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Aleo' rel='stylesheet'>
+
+
+		<script type="text/javascript">
+		
+			/* for reponsive navbar */
+			function myFunction() {
+			  var x = document.getElementById("navbar01");
+			  if (x.className === "gennavb") {
+			    x.className += " responsive";
+			  } else {
+			    x.className = "gennavb";
+			  }
+			}
+
+
+			/*form validation*/
+
+		function checkFname (document) {
+
+			var fname = document.getElementById("fname");
+			var fname_msg = document.getElementById('fname_msg');
+
+
+			if (fname.value == "") { 
+
+			fname_msg.innerHTML="You did not enter a name.Please enter your name now.";
+			fname.focus();
+			return false;
+
+			}
+
+			else {
+				fname_msg.innerHTML ="";
+			}
+
+			return true; 
+
+		}
+
+			function checkLname (document) {
+
+			var lname = document.getElementById("lname");
+			var lname_msg = document.getElementById('lname_msg');
+
+
+			if (lname.value == "") { 
+
+			lname_msg.innerHTML="You did not enter last name.Please enter your name now.";
+			lname.focus();
+			return false;
+
+			}
+
+			else {
+				lname_msg.innerHTML ="";
+			}
+
+			return true; 
+
+		}
+
+
+		function checkEmail (document) {
+
+			var email = document.getElementById("email");
+			var email_msg = document.getElementById('email_msg');
+
+			if (email.value == ""){
+
+				email_msg.innerHTML="You did not enter an email address. Please enter your email.";
+				email.focus();
+				return false;
+			}
+
+			else {
+
+				email_msg.innerHTML ="";
+			}
+
+			return true;
+
+		}
+
+
+
+		function checkPassword (document)  {
+
+			var pass = document.getElementById("pass");
+			var pass_msg = document.getElementById('pass_msg');
+
+				if (pass.value == "") {
+
+				pass_msg.innerHTML="You did not enter a password. Please enter your password now.";
+				pass.focus();
+				return false;
+
+				}	
+
+				else {
+
+				pass_msg.innerHTML = "";
+
+				}
+
+				return true;
+
+			}
+
+
+
+		function checkRePassword(document) { 
+
+			var pass = document.getElementById("pass");
+			var pass_msg = document.getElementById('pass_msg');
+			var conpass = document.getElementById("conpass");
+
+			if ( pass.value != conpass.value) {
+
+				pass_msg.innerHTML = "The two passwords are not the same. Please re-enter both now."; 
+				conpass.value = "";
+				pass.focus(); 
+				return false;
+			}
+
+			else {
+				pass_msg.innerHTML = "";
+			}
+
+			return true;
+
+
+		}
+
+
+		
+
+
+		function validateInfo (document) {
+			
+			if 
+			( checkFname (document) && checkLname (document) && checkEmail (document) && checkPassword (document) && checkRePassword (document)
+
+				 )
+
+			{
+				return true;
+			}
+			return false;
+		}
+
+
+		function showPassword() {
+
+		  var showpass = document.getElementById("pass");
+
+		  if (showpass.type === "password") {
+
+		    showpass.type = "text";
+		  } else {
+
+		    showpass.type = "password";
+
+		  }
+		}
+
+			function showconPassword() {
+
+		  var showconpass = document.getElementById("conpass");
+
+		  if (showconpass.type === "password") {
+
+		    showconpass.type = "text";
+		  } else {
+
+		    showconpass.type = "password";
+
+		  }
+		}
+
+		function checkfootMail (document) {
+
+			var checkfootMail = document.getElementById("footmail");
+			var checkfootMail_msg = document.getElementById('footmail_msg');
+
+
+			if (footmail.value == "") { 
+
+			footmail_msg.innerHTML="You did not enter an e-mail.Please enter your e-mail now.";
+			footmail.focus();
+			return false;
+
+			}
+
+			else {
+				footmail_msg.innerHTML ="";
+			}
+
+			return true; 
+
+
+		}
+
+
+		function checkfootPass (document) {
+
+			var checkfootPass = document.getElementById("footpass");
+			var checkfootPass_msg = document.getElementById('footpass_msg');
+
+
+			if (footpass.value == "") { 
+
+			footpass_msg.innerHTML="You did not enter password.Please enter your password now.";
+			footpass.focus();
+			return false;
+
+			}
+
+			else {
+				footpass_msg.innerHTML ="";
+			}
+
+			return true; 
+
+
+		}
+
+
+
+
+
+
+
+		function validateInfoFoot(document) {
+
+			if 
+			( checkfootMail (document) && checkfootPass (document) )
+
+			{
+				return true;
+			}
+			return false;
+		}
+
+
+
+
+
+
+		</script>
+
+
+
+
+
+		<style type="text/css">
+		
+			body {
+				font-family: 'Aleo';
+			}
+
+
+		</style>
+
+</head>
+
+<body>
+	<header>
+	<!-- logo + topbar --> 
+			<div class="navheader">
+				
+			<div class="topbar">
+					<a href="#"><img id="eye" src="eyeicon.png"></a>
+					<a href="support.html"> <img id="help" src="helpicon.png"></a>
+					<a href="login.html"> <img id="login" src="loginicon.png"></a>
+				</div>
+
+				<div>	
+					<a href="index.html"><img id="awlogo" src="ASEAN Walk LOGO.png"></a>
+				</div>
+			</div>
+
+			<!-- general navbar --> 
+			<div class="gennavb" id="navbar01">
+			
+						  <a href="index.html">Home</a>
+						  <a href="aboutus.html">About Us</a>
+						  <a href="eat.html">Eat!</a>
+						  <a href="walk.html">Walk!</a>
+						  <a href="rest.html">Rest!</a>
+						  <a href="booking.html">Book Now! </a>
+						  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+						    <i class="fa fa-bars"></i>
+						  </a>
+
+			</div>
+
+			<!-- registration form --> 
+			<div class="maincontent">
+				
+				<h1> Create Account!</h1>
+
+				<div class="regform">
+					  <form action="" method="post">
+
+					  	<div>
+						    <label for="fname">First Name</label>
+						    <input type="text" id="fname" name="fname" placeholder="Please enter your first name.." onchange="checkFname(document)">
+						    <p id="fname_msg" style="color:red;"></p> <br>
+						</div>
+
+						<div>
+						    <label for="lname">Last Name</label>
+						    <input type="text" id="lname" name="lname" placeholder="Please enter your last name.." onchange="checkLname(document)">
+						    <p id="lname_msg" style="color:red;"></p> 
+						</div>
+
+						<div>
+					    	<label for="email"> E-mail</label>
+					    	<input type="text" id="email" name="email" placeholder="Please enter your e-mail.." onchange="checkEmail(document)" pattern="[a-zA-Z0-9!#$%&amp;'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*">
+					    	<p id="email_msg" style="color:red;"></p>
+						</div>
+
+						<div>
+						     <label for="mainpass"> Password </label>
+						    <input type="password" id="pass" name="pass" placeholder="Please enter your password.." onchange="checkPassword(document)">
+						    <p id="pass_msg" style="color:red;"></p>
+						    <input type="checkbox" onclick="showPassword()">Show Password<br>
+						</div>
+
+
+					    <br>
+
+					    <div>
+					     <label for="conpass"> Confirm Password </label>
+					    <input type="password" id="conpass" name="conpass" placeholder="Please confirm your password.." 
+					    onchange="checkRePassword(document)">
+					    <p id="pass_msg" style="color:red;"></p>
+					    <input type="checkbox" onclick="showconPassword()">Show Password<br>
+						</div>
+
+
+					    <br>
+
+					    <div>
+					    <label for="country">Country</label>
+					    <select id="country" name="country">
+	
+					      <option value="brunei">Brunei</option>
+					      <option value="cambodia">Cambodia</option>
+					      <option value="indonesia">Indonesia</option>
+					      <option value="laos">Laos</option>
+					      <option value="malaysia">Malaysia</option>
+					      <option value="myanmar">Myanmar</option>
+					      <option value="philippines">Philippines</option>
+					      <option value="singapore">Singapore</option>
+					      <option value="thailand">Thailand</option>
+					      <option value="vietnam">Vietnam</option>
+					    </select>
+
+
+					    <input type="submit" value="Signup" onclick="return validateInfo(document)">
+						</div>
+					  
+					    
+					  </form>
+
+					</div>
+					</div>
+
+
+			</div>
+
+
+		</header>
+
+
+		<footer>
+				<div class="footer">
+
+				
+
+				<div id="footerform">
+					<h3> Ready for the Adventure ? </h3>
+						
+						<a href="login.html"><button id="regbut">Login</button></a>
+						<br>
+
+						<br>
+
+						New to ASEAN Walk ? Join Us!
+
+						<br>
+						<br>
+
+						<a href="register.html"><button id="regbut">Sign Up</button></a>
+				</div>
+
+
+
+		
+				<img src="socialmedia01.png">
+
+			
+				<br>
+
+
+				<p> Copyrights &copy; 2019 All Rights Reserved ASEAN Walk </p>
+
+			</div>
+
+	</footer>
+
+
+
+</body>
+
+
+
+</html>

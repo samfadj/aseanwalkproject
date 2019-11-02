@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+	<link href="style02.css" rel="stylesheet" type="text/css" media="screen">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+    <title>Login Form</title>
+    <title>ASEAN > Login </title>
+	<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="login.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Aleo' rel='stylesheet'>
+		<script type="text/javascript" src="globalJAVA.js"></script>
+		<link rel="stylesheet" type="text/css" href="button.css">
+		<link rel="stylesheet" type="text/css" href="style02.css">
+</head>
+
+<body class="body">
+	<header>
+
+
+		<!-- logo + topbar --> 
+			<div class="navheader">
+				
+			<div class="topbar">
+					<a href="#"><img id="eye" src="eyeicon.png"></a>
+					<a href="support.html"> <img id="help" src="helpicon.png"></a>
+					<a href="login.html"> <img id="login" src="loginicon.png"></a>
+				</div>
+
+				<div>	
+					<a href="index.html"><img id="awlogo" src="ASEAN Walk LOGO.png"></a>
+				</div>
+			</div>
+
+			<!-- general navbar --> 
+			<div class="gennavb" id="navbar01">
+			
+						  <a href="index.html">Home</a>
+						  <a href="aboutus.html">About Us</a>
+						  <a href="eat.html">Eat!</a>
+						  <a href="walk.html">Walk!</a>
+						  <a href="rest.html">Rest!</a>
+						  <a href="booking.html"  class="active" >Book Now! </a>
+						  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+						    <i class="fa fa-bars"></i>
+						  </a>
+
+			</div>
+
+
+
+
+		<!--main form --> 
+			<div class="form_wrapper">
+			  <div class="login-form">
+
+				<div class="title_container">
+				  <h2>Welcome to the Login Page!</h2>
+				</div>
+
+				<div class="row clearfix">
+				  <div>
+					<form method="post" id="register-form">
+
+					  <!-- Error -->
+					  <div id="error">
+					  </div>
+
+					  <!-- Email -->
+					  <div class="input_field"> 
+					  	<p>E-mail:</p>
+						<input type="email" name="email" placeholder="Email" id="email" required />
+					  </div>
+
+					  <!-- Password -->
+					  <div class="input_field"> 
+					  	<p>Password:</p>
+						<input type="password" name="password" placeholder="Password" id="password" required />
+					  </div>
+
+
+					  <div class="row clearfix">
+							<!-- Submit -->
+							<div class="col_half">
+							  <div class="input_field">
+								<button type="submit" name="btn-submit" id="btn-submit">
+									&nbsp; Login
+								</button>
+							  </div>
+							</div>
+
+							<!-- Cancel -->
+							<div class="col_half">				  
+							  <div class="input_field"> 
+								<button type="reset" name="btn-cancel" id="btn-cancel">
+									&nbsp; Cancel
+								</button>
+								<!--<input class="button" type="reset" value="Cancel" id="btn_cancel" />-->
+							  </div>
+							</div>
+					  </div>
+
+					  <!-- Register -->
+					  <div class="input_field"> 
+						<button  type="button" name="register" id="register">
+								&nbsp; Register Now 
+						</button>
+						<script type="text/javascript">
+							 document.getElementById("register").onclick = function () {
+									location.href = "registration_index.php";				//go to registration page
+							 };
+						</script>
+						
+					  </div>
+
+
+					  </div>
+					  
+					</form>
+					<?php include "login_process.php";?>
+
+				  </div>
+				</div>
+			  </div>
+			  
+			</div>
+
+	</header>
+
+
+	<footer>
+		
+
+		<div class="footer">
+
+				
+
+				<div id="footerform">
+					<h3> Ready for the Adventure ? </h3>
+
+						<br>	
+						<a href="login.html"><button id="regbut">Login</button></a>
+						<br>
+
+						<br>
+
+						New to ASEAN Walk ? Join Us!
+
+						<br>
+						<br>
+
+						<a href="register.html"><button id="regbut">Sign Up</button></a>
+				</div>
+
+
+
+		
+				<img src="socialmedia01.png">
+
+			
+				<br>
+
+
+				<p> Copyrights &copy; 2019 All Rights Reserved ASEAN Walk </p>
+
+			</div>
+		
+	</footer>
+	
+</body>
+</html>

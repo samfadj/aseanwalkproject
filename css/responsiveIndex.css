@@ -1,0 +1,52 @@
+
+/* mobile phone screen */
+@media screen and (max-width: 500px;) {
+
+	#homecover img {
+		width: 100%;
+	}
+
+	div #homecontent {
+
+	}
+
+	#homecatcolumn { 
+
+	}
+
+
+ 	div.homecatcolpart01 {
+
+ 
+
+	 }
+
+
+	 div.homecatcolpart02 {
+
+
+
+	 }
+
+	 div.homecatcolpart03 {
+
+	 }
+
+	 div.homecatcolpart04 {
+
+	 }
+
+
+
+
+	 div #homecatcolumn img {
+
+	 	
+	 }
+
+
+}
+
+/* tablets and laptops */
+@media screen and (min-width: 500px;) {
+

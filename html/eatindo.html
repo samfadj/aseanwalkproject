@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+		<title>ASEAN Walk > Eat! > Indonesia </title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="eatsub01.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Aleo' rel='stylesheet'>
+		<link rel="stylesheet" type="text/css" href="booking.css">
+
+
+		<script type="text/javascript">
+		
+			/* for reponsive navbar */
+			function myFunction() {
+			  var x = document.getElementById("navbar01");
+			  if (x.className === "gennavb") {
+			    x.className += " responsive";
+			  } else {
+			    x.className = "gennavb";
+			  }
+			}
+
+			/* for filters */
+
+			filterSelection("all")
+				function filterSelection(c) {
+				  var x, i;
+				  x = document.getElementsByClassName("filterDiv");
+				  if (c == "all") c = "";
+				  for (i = 0; i < x.length; i++) {
+				    w3RemoveClass(x[i], "show");
+				    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+				  }
+				}
+
+				function w3AddClass(element, name) {
+				  var i, arr1, arr2;
+				  arr1 = element.className.split(" ");
+				  arr2 = name.split(" ");
+				  for (i = 0; i < arr2.length; i++) {
+				    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+				  }
+				}
+
+				function w3RemoveClass(element, name) {
+				  var i, arr1, arr2;
+				  arr1 = element.className.split(" ");
+				  arr2 = name.split(" ");
+				  for (i = 0; i < arr2.length; i++) {
+				    while (arr1.indexOf(arr2[i]) > -1) {
+				      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+				    }
+				  }
+				  element.className = arr1.join(" ");
+				}
+
+				// Add active class to the current button (highlight it)
+				var btnContainer = document.getElementById("btncontainer");
+				var btns = btnContainer.getElementsByClassName("btn");
+				for (var i = 0; i < btns.length; i++) {
+				  btns[i].addEventListener("click", function(){
+				    var current = document.getElementsByClassName("active");
+				    current[0].className = current[0].className.replace(" active", "");
+				    this.className += " active";
+				  });
+				}
+
+		</script>
+
+
+		<style type="text/css">
+		
+		body {
+
+			font-family: 'Aleo';
+		}
+
+		</style>
+</head>
+
+
+
+<body>
+
+	<header>
+		<!-- logo + topbar --> 
+			<div class="navheader">
+				
+	<div class="topbar">
+					<a href="#"><img id="eye" src="eyeicon.png"></a>
+					<a href="support.html"> <img id="help" src="helpicon.png"></a>
+					<a href="login.html"> <img id="login" src="loginicon.png"></a>
+				</div>
+
+				<div>	
+					<a href="index.html"><img id="awlogo" src="ASEAN Walk LOGO.png"></a>
+				</div>
+			</div>
+
+			<!-- general navbar --> 
+			<div class="gennavb" id="navbar01">
+			
+						  <a href="index.html">Home</a>
+						  <a href="aboutus.html">About Us</a>
+						  <a href="eat.html" class="active">Eat!</a>
+						  <a href="walk.html">Walk!</a>
+						  <a href="rest.html">Rest!</a>
+						  <a href="booking.html">Book Now! </a>
+						  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+						    <i class="fa fa-bars"></i>
+						  </a>
+
+			</div>
+
+			<div class="maincontent">
+
+				<h1> Indonesia </h1>
+
+				<!-- filter -->
+				<h3>Food Categories</h3>
+
+						<!-- filter buttons -->
+					  <div id="btncontainer">
+					      <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+					      <button class="btn" onclick="filterSelection('traditional')"> Traditional</button>
+					      <button class="btn" onclick="filterSelection('western')"> Western</button>
+					      <button class="btn" onclick="filterSelection('japanese')"> Japanese</button>
+					      <button class="btn" onclick="filterSelection('chinese')"> Chinese</button>
+					       <button class="btn" onclick="filterSelection('korean')"> Korean</button>
+					      <button class="btn" onclick="filterSelection('cafendesserts')"> Cafe & Desserts</button>
+					      <button class="btn" onclick="filterSelection('clubsnbars')"> Clubs & Bars</button>
+					  </div>
+
+					  <!-- filter elements -->
+
+					  <div class="container">
+
+					    <div class="filterDiv traditional">
+					        <a href="indo_rockbar.html"><strong>Rock Bar Bali</strong></a>
+
+					        <a href="indo_rockbar.html"> <img src="indo_ay.jpg" style="width: 100%;"> </a>
+					        <p> 
+
+					          <strong> Location:</strong>  Street 123 Street 123 
+					          <br>
+					          <strong> Rating: </strong>    <span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+
+					        </p>
+
+					    </div>
+
+
+					    <div class="filterDiv traditional">
+					     <a href="indo_rockbar.html"><strong>Babi Guling Candra</strong></a>
+
+					        <a href="indo_rockbar.html"><img src="indo_can.jpg" style="width: 100%;"></a>
+					        <p> 
+					        	<strong>Location:</strong> Street 123 Street 123 <br>
+					          	<strong> Rating: </strong>  <span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+
+					        </p>
+					    </div>
+
+
+					    <div class="filterDiv traditional">
+					      <a href="indo_rockbar.html"><strong>Ayam Betutu Gilimanuk</strong></a>
+
+					        <a href="indo_rockbar.html"><img src="indo_bet.jpg" style="width: 100%;"></a>
+					        <p> <strong> Location:</strong> Street 123 Street 123 <br>
+					          	<strong> Rating: </strong>  <span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+
+					        </p>
+					    </div>
+
+					     <div class="filterDiv western">
+					        <a href="indo_rockbar.html"><strong>The John</strong></a>
+
+					        <a href="indo_rockbar.html"><img src="bru_west.jpg" style="width: 100%;">
+</a>
+					        <p> <strong> Location:</strong>  Street 123 Street 123 <br>
+					          <strong> Rating: </strong>    <span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+															<span class="fa fa-star"></span>
+					        </p>
+					    </div>
+
+
+					    <div class="filterDiv western">
+					     <a href="indo_rockbar.html"><strong> High Rise Restaurant</strong></a>
+
+					        <a href="indo_rockbar.html"><img src="bru_west02.jpg" style="width: 100%;"></a>
+					        <p> <strong>Location:</strong> Street 123 Street 123 <br>
+					          <strong> Rating: </strong>    <span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+															<span class="fa fa-star"></span>
+					        </p>
+					    </div>
+
+
+					    <div class="filterDiv western">
+					      <a href="indo_rockbar.html"><strong>The Heaven</strong></a>
+
+					        <a href="indo_rockbar.html"><img src="bru_west.jpg" style="width: 100%;"></a>
+					        <p> <strong> Location:</strong> Street 123 Street 123 <br>
+					          <strong> Rating: </strong>    <span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+															<span class="fa fa-star"></span>
+					        </p>
+					    </div>
+
+					     <div class="filterDiv japanese">
+					        <a href="indo_rockbar.html"><strong>Hokka Bento</strong></a>
+
+					       <a href="indo_rockbar.html"> <img src="bru_jap.jpg" style="width: 100%;"> </a>
+
+					        <p> 
+
+					          <strong> Location:</strong>  Street 123 Street 123 
+					          <br>
+					          <strong> Rating: </strong>    <span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+
+					        </p>
+
+					    </div>
+
+
+					    <div class="filterDiv japanese">
+					     <a href="indo_rockbar.html"><strong> Wata Shi </strong></a>
+
+					       <a href="indo_rockbar.html"> <img src="bru_jap02.jpg" style="width: 100%;"></a>
+					        <p> 
+					        	<strong>Location:</strong> Street 123 Street 123 <br>
+					          	<strong> Rating: </strong>  <span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+
+					        </p>
+					    </div>
+
+
+					    <div class="filterDiv japanese">
+					      <a href="indo_rockbar.html"><strong>Arigato Desu</strong></a>
+
+					        <a href="indo_rockbar.html"><img src="bru_jap03.jpg" style="width: 100%;"></a>
+					        <p> <strong> Location:</strong> Street 123 Street 123 <br>
+					          	<strong> Rating: </strong>  <span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+
+					        </p>
+					    </div>
+
+					     <div class="filterDiv chinese">
+					        <a href="indo_rockbar.html"><strong>Xiao Xiao Restaurant</strong></a>
+
+					        <a href="indo_rockbar.html"><img src="bru_chi.jpg" style="width: 100%;"></a>
+
+					        <p> <strong> Location:</strong>  Street 123 Street 123 <br>
+					          <strong> Rating: </strong>    <span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+					        </p>
+					    </div>
+
+
+					    <div class="filterDiv chinese">
+					     <a href="indo_rockbar.html"><strong> Good Taste </strong></a>
+
+					        <a href="indo_rockbar.html"><img src="bru_chi02.jpg" style="width: 100%;"></a>
+					        <p> <strong>Location:</strong> Street 123 Street 123 <br>
+					          <strong> Rating: </strong>    <span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+															<span class="fa fa-star"></span>
+					        </p>
+					    </div>
+
+
+					    <div class="filterDiv chinese">
+					      <a href="indo_rockbar.html"><strong>Lala Dim Sum</strong></a>
+
+					        <a href="indo_rockbar.html"><img src="bru_chi03.jpg" style="width: 100%;"></a>
+					        <p> <strong> Location:</strong> Street 123 Street 123 <br>
+					          <strong> Rating: </strong>    <span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+															<span class="fa fa-star"></span>
+					        </p>
+					    </div>
+
+
+					     <div class="filterDiv korean">
+					        <a href="indo_rockbar.html"><strong>Anyeong Snow</strong></a>
+
+					        <a href="indo_rockbar.html"><img src="bru_kor03.jpg" style="width: 100%;"></a>
+
+					        <p> <strong> Location:</strong>  Street 123 Street 123 <br>
+					          <strong> Rating: </strong>    <span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+															<span class="fa fa-star"></span>
+					        </p>
+					    </div>
+
+
+					    <div class="filterDiv korean">
+					     <a href="indo_rockbar.html"><strong> Oppa Ice </strong></a>
+
+					        <a href="indo_rockbar.html"><img src="bru_kor02.jpg" style="width: 100%;"></a>
+					        <p> <strong>Location:</strong> Street 123 Street 123 <br>
+					          <strong> Rating: </strong>    <span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+															<span class="fa fa-star"></span>
+					        </p>
+					    </div>
+
+
+					    <div class="filterDiv korean">
+					      <a href="indo_rockbar.html"><strong>The Extreme Korean BBQ</strong></a>
+
+					       <a href="indo_rockbar.html"><img src="bru_kor.jpg" style="width: 100%;"></a>
+					        <p> <strong> Location:</strong> Street 123 Street 123 <br>
+					          <strong> Rating: </strong>    <span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+															<span class="fa fa-star"></span>
+					        </p>
+					    </div>
+
+					     <div class="filterDiv cafendesserts">
+					        <a href="indo_rockbar.html"><strong>Cafe My Lady</strong></a>
+
+					        <a href="indo_rockbar.html"><img src="bru_cafe01.jpg" style="width: 100%;"></a>
+
+					        <p> 
+
+					          <strong> Location:</strong>  Street 123 Street 123 
+					          <br>
+					          <strong> Rating: </strong>    <span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+															<span class="fa fa-star"></span>
+
+					        </p>
+
+					    </div>
+
+
+					    <div class="filterDiv cafendesserts">
+					     <a href="indo_rockbar.html"><strong> The Stoning Corner</strong></a>
+
+					        <a href="indo_rockbar.html"><img src="bru_cafe02.jpg" style="width: 100%;"></a>
+					        <p> 
+					        	<strong>Location:</strong> Street 123 Street 123 <br>
+					          	<strong> Rating: </strong>  <span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+
+					        </p>
+					    </div>
+
+
+					    <div class="filterDiv cafendesserts">
+					      <a href="indo_rockbar.html"><strong>Chill and Drill</strong></a>
+
+					       <a href="indo_rockbar.html"> <img src="bru_cafe03.jpg" style="width: 100%;"></a>
+					        <p> <strong> Location:</strong> Street 123 Street 123 <br>
+					          	<strong> Rating: </strong>  <span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+
+					        </p>
+					    </div>
+
+					     <div class="filterDiv clubsnbars">
+					        <a href="indo_rockbar.html"><strong>Relief</strong></a>
+
+					        <a href="indo_rockbar.html"><img src="bru_clubar02.jpg" style="width: 100%;"></a>
+
+					        <p> <strong> Location:</strong>  Street 123 Street 123 <br>
+					          <strong> Rating: </strong>    <span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+					        </p>
+					    </div>
+
+
+					    <div class="filterDiv clubsnbars">
+					     <a href="indo_rockbar.html"><strong> PlayPlay Club </strong></a>
+
+					       <a href="indo_rockbar.html"> <img src="bru_clubar.jpg" style="width: 100%;"> </a>
+					        <p> <strong>Location:</strong> Street 123 Street 123 <br>
+					          <strong> Rating: </strong>    <span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+															<span class="fa fa-star"></span>
+					        </p>
+					    </div>
+
+
+					    <div class="filterDiv clubsnbars">
+					      <a href="indo_rockbar.html"><strong> Sound Factory </strong></a>
+
+					        <a href="indo_rockbar.html"><img src="bru_clubar03.jpg" style="width: 100%;"></a>
+					        <p> <strong> Location:</strong> Street 123 Street 123 <br>
+					          <strong> Rating: </strong>    <span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+															<span class="fa fa-star"></span>
+					        </p>
+					    </div>
+
+
+
+
+
+
+
+
+
+					  </div>
+
+				
+
+			</div>
+
+		
+
+	</header>
+
+
+
+	<footer>
+
+		<div class="footer">
+
+				
+
+				<div id="footerform">
+					<h3> Ready for the Adventure ? </h3>
+						
+						<a href="login.html"><button id="regbut">Login</button></a>
+						<br>
+
+						<br>
+
+						New to ASEAN Walk ? Join Us!
+
+						<br>
+						<br>
+
+						<a href="register.html"><button id="regbut">Sign Up</button></a>
+				</div>
+
+
+
+		
+				<img src="socialmedia01.png">
+
+			
+				<br>
+
+
+				<p> Copyrights &copy; 2019 All Rights Reserved ASEAN Walk </p>
+
+			</div>
+
+	</footer>
+
+</body>
+
+
+</html>

@@ -1,0 +1,397 @@
+
+/* -------------------------------------------------------- mobile screen---------------------------------------------------------*/
+
+/* reset margin and padding */
+* {
+
+	margin: 0;
+	padding: 0;
+
+
+	/*
+	 -moz-filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    filter: gray;    
+    filter: grayscale(100%);
+
+   	*/
+}
+
+/*overall container */
+
+div.wrapper {
+
+	width: 100%;
+}
+/* topbar */
+
+div.topbar img{
+
+	width: 25px;
+	float: right;
+	padding: 5px;
+
+}
+
+
+.topbutton {
+  
+  border: none;
+  color: white;
+  background-color: RoyalBlue; 
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  float: right;
+}
+
+/* Darker background on mouse-over */
+.topbutton:hover {
+  background-color: #0089FF;
+}
+
+
+
+/* logo +cover photo */
+#awlogo {
+
+	width: 100%;
+
+}
+
+
+
+#homecover img {
+
+	width: 100%;
+	max-height: 450px;
+}
+
+/* home navbar with icons */
+#homecontent img {
+
+	width: 20%;
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
+	display: block;
+	padding: 10px 30px 10px 10px;
+}
+
+#homecontent ul {
+
+	list-style-type: none;
+	overflow: hidden;
+}
+
+#homecontent li h2 { 
+
+	text-align: center;
+	padding: 10px 30px 10px 10px;
+	color: #000000;
+
+ }
+
+ #homecontent li h2:hover { 
+
+	color: #5C607C;
+
+ }
+
+ #homecontent li a {
+ 	text-decoration: none;
+ }
+
+ /*categories*/
+
+
+#homecatcolumn img {
+
+	width: 80%;
+	display: block;
+	padding-right: 10px;
+
+	
+}
+
+#homecatcolumn h2, p {
+	text-align: center;
+
+}
+
+#homecatcolumn p {
+	text-align: center;
+	font-size: 15px;
+	padding: 15px;
+}
+
+#homecatcolumn h3 {
+
+	text-align: center;
+	padding-bottom: 15px;
+	text-decoration: none;
+}
+
+#homecatcolumn ol {
+	line-height: 1.5em;
+	text-align: center;
+
+}
+
+#homecatcolumn li{
+
+	width: 100%;
+
+}
+
+/* footer */
+
+.footer {
+
+	background-color: #5C607C;
+	text-align: center;
+	padding: 20px;
+	color: #ffffff;
+
+	height: 70%;
+}
+
+#footerform h3 {
+
+	color: #ffffff;
+	padding-bottom: 10px;
+
+}
+
+#footerform {
+
+	width: 100%;
+	float: left;
+}
+
+div.footer img {
+
+	width: 75%;
+	padding-bottom: 50px;
+}
+
+/* form */
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #56556F;
+  opacity: 0.5; /* Firefox */
+  text-align: center;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #56556F;
+  text-align: center;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #56556F;
+  text-align: center;
+}
+
+.box01 , .box02{
+
+	width: 50%;
+	height: 35px;
+	margin-top: 10px;
+}
+
+input[type=submit] {
+
+	background-color: #A8A8AB;
+	color: #000000;
+	padding: 15px;
+	border-radius: 10px;
+}
+
+input[type=submit]:hover {
+
+	background-color: #0C80C3;
+
+}
+
+
+
+
+
+
+/* -------------------------------------------------------- tablet screen size ---------------------------------------------------------*/
+
+@media only screen and (min-width: 700px) {
+
+
+
+/* logo */
+#awlogo {
+
+	width: 40%;
+	padding: 25px;
+}
+
+/* topbar --> support, login, blind people support */
+div.topbar img{
+
+	width: 45px;
+	float: right;
+	padding: 15px;
+
+}
+
+
+/* categories */
+div.homecatcolpart01{
+
+	width: 50%;
+	padding: 0px;
+	float: left;
+}
+
+div.homecatcolpart02{
+
+	width: 50%;
+	padding: 0px;
+	float: left;
+}
+
+div.homecatcolpart03{
+
+	width: 100%;
+	display: inline-block;
+
+
+}
+
+div.homecatcolpart04 h3, ol{
+
+	width: 100%;
+	
+}
+
+
+
+
+/*navbar */
+div.homenav {
+
+	width: 100%;
+}
+
+
+
+div.homenav ul li {
+
+	float: left;
+	width: 20%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 15px;
+}
+
+div.footer img {
+
+	width: 35%;
+	padding-bottom: 50px;
+}
+
+.box01 , .box02{
+
+	width: 33%;
+	height: 35px;
+	margin-top: 10px;
+}
+
+
+}
+
+
+
+/* -------------------------------------------------------- laptop screen size ---------------------------------------------------------*/
+
+@media only screen and (min-width: 900px) {
+
+/* logo */
+#awlogo {
+
+	width: 25%;
+	padding: 25px;
+}
+
+
+div.homenav {
+
+	padding-top: 30px;
+}
+
+div.homecatcolpart01{
+
+	width: 25%;
+	padding: 0px;
+	float: left;
+}
+
+div.homecatcolpart02{
+
+	width: 25%;
+	padding: 0px;
+	float: left;
+}
+
+div.homecatcolpart03{
+
+	width: 25%;
+	padding:0px;
+	float: left;
+
+
+}
+
+div.homecatcolpart03 img {
+
+	width: 100%;
+
+
+}
+
+div.homecatcolpart04 h3, ol{
+
+	width: 25%;
+	float: left;
+	text-align: center;
+	list-style-type: none;
+	
+}
+
+
+
+
+div.homecatcolpart04 h3 {
+
+	text-decoration: underline;
+}
+
+
+
+
+.footer {
+
+	clear: both;
+	height: 25%;
+}
+
+div.footer img {
+
+	width: 25%;
+}
+
+
+div.homecatcolpart01, .homecatcolpart02, .homecatcolpart03, .homecatcolpart04 {
+
+	margin-bottom: 50px;
+}
+
+
+}
